@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --color-beige: #FDF8F0;
+  --color-beige-dark: #F5EDE0;
+  --color-trust: #2563EB;
+  --color-trust-dark: #1D4ED8;
+  --color-growth: #16A34A;
+  --color-growth-dark: #15803D;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-beige);
+  color: #1F2937;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* RTL support for Arabic */
+[dir="rtl"] {
+  text-align: right;
+}
