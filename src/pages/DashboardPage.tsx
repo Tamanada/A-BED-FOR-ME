@@ -43,8 +43,8 @@ export default function DashboardPage() {
         {/* Hotel Status Card */}
         <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
           <div className="flex items-center gap-3 mb-4">
-            <div className="w-10 h-10 bg-trust/10 rounded-xl flex items-center justify-center">
-              <Hotel className="w-5 h-5 text-trust" />
+            <div className="w-10 h-10 bg-sky/10 rounded-xl flex items-center justify-center">
+              <Hotel className="w-5 h-5 text-sky" />
             </div>
             <h2 className="text-lg font-semibold text-gray-900">{t('dashboard.hotelStatus')}</h2>
           </div>
@@ -52,7 +52,7 @@ export default function DashboardPage() {
           {hotels.length > 0 ? (
             <div className="space-y-3">
               {hotels.map((hotel, i) => (
-                <div key={i} className="flex items-center justify-between p-3 rounded-xl bg-beige">
+                <div key={i} className="flex items-center justify-between p-3 rounded-xl bg-gray-50">
                   <span className="font-medium text-gray-900">{hotel.name}</span>
                   <span className={`px-3 py-1 text-xs font-medium rounded-full border ${statusColors[hotel.status] || statusColors.pending}`}>
                     {t(`dashboard.${hotel.status || 'pending'}`)}
@@ -65,7 +65,7 @@ export default function DashboardPage() {
               <p className="text-gray-500 mb-4">{t('dashboard.noHotel')}</p>
               <Link
                 to="/submit"
-                className="inline-flex items-center gap-2 px-4 py-2 bg-trust hover:bg-trust-dark text-white text-sm font-medium rounded-xl transition-colors"
+                className="inline-flex items-center gap-2 px-4 py-2 bg-sky hover:bg-sky-dark text-white text-sm font-medium rounded-xl transition-colors"
               >
                 <Plus className="w-4 h-4" />
                 {t('dashboard.submitNow')}
@@ -89,7 +89,7 @@ export default function DashboardPage() {
               <input
                 readOnly
                 value={referralLink}
-                className="flex-1 px-3 py-2 text-sm bg-beige rounded-lg border border-gray-200 text-gray-700 truncate"
+                className="flex-1 px-3 py-2 text-sm bg-gray-50 rounded-lg border border-gray-200 text-gray-700 truncate"
               />
               <button
                 onClick={copyReferralLink}
@@ -102,19 +102,19 @@ export default function DashboardPage() {
           </div>
 
           <div className="grid grid-cols-2 gap-4">
-            <div className="bg-beige rounded-xl p-4 text-center">
+            <div className="bg-gray-50 rounded-xl p-4 text-center">
               <p className="text-2xl font-bold text-gray-900">0</p>
               <p className="text-xs text-gray-500 mt-1">{t('dashboard.referralCount')}</p>
             </div>
-            <div className="bg-beige rounded-xl p-4 text-center">
-              <p className="text-2xl font-bold text-trust">{t('dashboard.position', { position: 42 })}</p>
+            <div className="bg-gray-50 rounded-xl p-4 text-center">
+              <p className="text-2xl font-bold text-sky">{t('dashboard.position', { position: 42 })}</p>
               <p className="text-xs text-gray-500 mt-1">{t('dashboard.earlyAdopter')}</p>
             </div>
           </div>
         </div>
 
         {/* Early Adopter Badge */}
-        <div className="md:col-span-2 bg-gradient-to-r from-trust to-blue-600 rounded-2xl p-6 text-white">
+        <div className="md:col-span-2 bg-gradient-to-r from-sky to-blue-600 rounded-2xl p-6 text-white">
           <div className="flex items-center gap-3">
             <Trophy className="w-8 h-8" />
             <div>

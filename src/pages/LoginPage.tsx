@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link, useNavigate } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
-import { BedDouble, Loader2 } from 'lucide-react';
+import { Cloud, Loader2 } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 
 interface LoginForm {
@@ -34,7 +34,7 @@ export default function LoginPage() {
     <div className="min-h-[80vh] flex items-center justify-center px-4 py-12">
       <div className="w-full max-w-md">
         <div className="text-center mb-8">
-          <BedDouble className="w-12 h-12 text-trust mx-auto mb-4" />
+          <Cloud className="w-12 h-12 text-sky mx-auto mb-4" />
           <h1 className="text-2xl font-bold text-gray-900">{t('auth.loginTitle')}</h1>
           <p className="mt-2 text-gray-600">{t('auth.loginSubtitle')}</p>
         </div>
@@ -50,7 +50,7 @@ export default function LoginPage() {
               <input
                 type="email"
                 {...register('email', { required: true })}
-                className={`w-full px-4 py-3 rounded-xl border ${errors.email ? 'border-red-400' : 'border-gray-200'} focus:border-trust focus:ring-1 focus:ring-trust outline-none`}
+                className={`w-full px-4 py-3 rounded-xl border ${errors.email ? 'border-red-400' : 'border-gray-200'} focus:border-sky focus:ring-1 focus:ring-sky outline-none`}
               />
             </div>
 
@@ -59,14 +59,14 @@ export default function LoginPage() {
               <input
                 type="password"
                 {...register('password', { required: true })}
-                className={`w-full px-4 py-3 rounded-xl border ${errors.password ? 'border-red-400' : 'border-gray-200'} focus:border-trust focus:ring-1 focus:ring-trust outline-none`}
+                className={`w-full px-4 py-3 rounded-xl border ${errors.password ? 'border-red-400' : 'border-gray-200'} focus:border-sky focus:ring-1 focus:ring-sky outline-none`}
               />
             </div>
 
             <button
               type="submit"
               disabled={loading}
-              className="w-full py-3.5 bg-trust hover:bg-trust-dark text-white font-semibold rounded-xl shadow-lg shadow-blue-500/25 transition-all disabled:opacity-50 flex items-center justify-center gap-2"
+              className="w-full py-3.5 bg-sky hover:bg-sky-dark text-white font-semibold rounded-xl shadow-lg shadow-sky/25 transition-all disabled:opacity-50 flex items-center justify-center gap-2"
             >
               {loading ? <Loader2 className="w-5 h-5 animate-spin" /> : t('auth.login')}
             </button>
@@ -74,7 +74,7 @@ export default function LoginPage() {
 
           <p className="mt-6 text-center text-sm text-gray-600">
             {t('auth.noAccount')}{' '}
-            <Link to="/signup" className="text-trust hover:underline font-medium">{t('auth.signup')}</Link>
+            <Link to="/signup" className="text-sky hover:underline font-medium">{t('auth.signup')}</Link>
           </p>
         </form>
       </div>

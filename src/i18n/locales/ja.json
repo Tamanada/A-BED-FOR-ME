@@ -1,5 +1,5 @@
 {
-  "brand": "A Bed For Me",
+  "brand": "aBed4.me",
   "nav": {
     "home": "ホーム",
     "vision": "ビジョン",
@@ -42,6 +42,19 @@
     "subtitle": "より公平な未来を築く何百ものホテル経営者に加わりましょう。まずはホテルについて教えてください。",
     "button": "今すぐ始める",
     "survey": "まずアンケートに回答"
+  },
+  "benefits": {
+    "title": "ホスト向けメリット",
+    "higher": "収益アップ",
+    "higherDesc": "手数料わずか10%でより多くの収益を手元に",
+    "priority": "優先掲載",
+    "priorityDesc": "地域の物件が優先的に表示される",
+    "support": "地域サポート",
+    "supportDesc": "あなたの地域を知るスタッフによる母語サポート",
+    "fair": "公平なポリシー",
+    "fairDesc": "コミュニティがコミュニティのために作ったルール",
+    "referral": "紹介ボーナス",
+    "referralDesc": "他のホストやゲストを招待して収益を得る"
   },
   "survey": {
     "title": "クイックアンケート",
@@ -142,10 +155,12 @@
     "ownershipDesc": "すべてのホテル経営者が共同オーナー",
     "revenue": "収益共有",
     "revenueDesc": "利益はあなたに還元",
+    "referralFee": "1% 紹介料",
+    "referralFeeDesc": "ゲスト紹介への報酬",
     "joinNow": "今すぐ参加"
   },
   "footer": {
     "tagline": "ホテル経営者が所有する予約プラットフォーム。",
-    "rights": "© 2026 A Bed For Me. All rights reserved."
+    "rights": "© 2026 aBed4.me. All rights reserved."
   }
 }

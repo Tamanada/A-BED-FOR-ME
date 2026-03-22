@@ -1,5 +1,5 @@
 {
-  "brand": "A Bed For Me",
+  "brand": "aBed4.me",
   "nav": {
     "home": "Inicio",
     "vision": "Nuestra Visión",
@@ -42,6 +42,19 @@
     "subtitle": "Únete a cientos de hoteleros construyendo un futuro más justo. Empieza contándonos sobre tu hotel.",
     "button": "Empezar Ahora",
     "survey": "Responder la Encuesta Primero"
+  },
+  "benefits": {
+    "title": "Beneficios para Anfitriones",
+    "higher": "Mayores Ganancias",
+    "higherDesc": "Conserva más de lo que ganas con solo 10% de comisión",
+    "priority": "Listados Prioritarios",
+    "priorityDesc": "Las propiedades locales tienen visibilidad primero",
+    "support": "Soporte Local",
+    "supportDesc": "Ayuda en tu idioma, de personas que conocen tu zona",
+    "fair": "Políticas Justas",
+    "fairDesc": "Reglas hechas por la comunidad, para la comunidad",
+    "referral": "Bonos de Referido",
+    "referralDesc": "Gana invitando a otros anfitriones y huéspedes"
   },
   "survey": {
     "title": "Encuesta Rápida",
@@ -142,10 +155,12 @@
     "ownershipDesc": "Cada hotelero es copropietario",
     "revenue": "Reparto de ingresos",
     "revenueDesc": "Las ganancias vuelven a ti",
+    "referralFee": "1% Referencias",
+    "referralFeeDesc": "Recompensando las referencias de huéspedes",
     "joinNow": "Únete Ahora"
   },
   "footer": {
     "tagline": "La plataforma de reservas propiedad de hoteleros.",
-    "rights": "© 2026 A Bed For Me. Todos los derechos reservados."
+    "rights": "© 2026 aBed4.me. Todos los derechos reservados."
   }
 }

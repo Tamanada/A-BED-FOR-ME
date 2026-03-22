@@ -53,7 +53,7 @@ export default function SurveyPage() {
         <p className="mt-4 text-gray-600">{t('survey.thanksText')}</p>
         <Link
           to="/submit"
-          className="mt-8 inline-flex items-center gap-2 px-6 py-3 bg-trust hover:bg-trust-dark text-white font-medium rounded-xl transition-colors"
+          className="mt-8 inline-flex items-center gap-2 px-6 py-3 bg-sky hover:bg-sky-dark text-white font-medium rounded-xl transition-colors"
         >
           {t('survey.submitHotel')}
           <ArrowRight className="w-4 h-4" />
@@ -76,7 +76,7 @@ export default function SurveyPage() {
         </div>
         <div className="w-full bg-gray-200 rounded-full h-2">
           <div
-            className="bg-trust h-2 rounded-full transition-all duration-300"
+            className="bg-sky h-2 rounded-full transition-all duration-300"
             style={{ width: `${((step + 1) / totalSteps) * 100}%` }}
           />
         </div>
@@ -94,7 +94,7 @@ export default function SurveyPage() {
                   onClick={() => setAnswers({ ...answers, satisfaction: i + 1 })}
                   className={`p-4 text-left rounded-xl border-2 transition-all ${
                     answers.satisfaction === i + 1
-                      ? 'border-trust bg-blue-50 text-trust'
+                      ? 'border-sky bg-sky/10 text-sky'
                       : 'border-gray-200 hover:border-gray-300 text-gray-700'
                   }`}
                 >
@@ -116,7 +116,7 @@ export default function SurveyPage() {
                   onClick={() => setAnswers({ ...answers, commission: option })}
                   className={`p-4 text-left rounded-xl border-2 transition-all ${
                     answers.commission === option
-                      ? 'border-trust bg-blue-50 text-trust'
+                      ? 'border-sky bg-sky/10 text-sky'
                       : 'border-gray-200 hover:border-gray-300 text-gray-700'
                   }`}
                 >
@@ -136,7 +136,7 @@ export default function SurveyPage() {
               onChange={(e) => setAnswers({ ...answers, frustration: e.target.value })}
               placeholder={t('survey.q3Placeholder')}
               rows={4}
-              className="w-full p-4 rounded-xl border-2 border-gray-200 focus:border-trust focus:ring-0 outline-none resize-none text-gray-700 placeholder:text-gray-400"
+              className="w-full p-4 rounded-xl border-2 border-gray-200 focus:border-sky focus:ring-0 outline-none resize-none text-gray-700 placeholder:text-gray-400"
             />
           </div>
         )}
@@ -153,11 +153,11 @@ export default function SurveyPage() {
                 max={10}
                 value={answers.interest}
                 onChange={(e) => setAnswers({ ...answers, interest: parseInt(e.target.value) })}
-                className="flex-1 accent-trust"
+                className="flex-1 accent-sky"
               />
               <span className="text-sm text-gray-500">10</span>
             </div>
-            <p className="text-center mt-4 text-3xl font-bold text-trust">{answers.interest}</p>
+            <p className="text-center mt-4 text-3xl font-bold text-sky">{answers.interest}</p>
           </div>
         )}
 
@@ -204,7 +204,7 @@ export default function SurveyPage() {
           {step < totalSteps - 1 ? (
             <button
               onClick={() => setStep(step + 1)}
-              className="flex items-center gap-2 px-6 py-2.5 bg-trust hover:bg-trust-dark text-white font-medium rounded-xl transition-colors"
+              className="flex items-center gap-2 px-6 py-2.5 bg-sky hover:bg-sky-dark text-white font-medium rounded-xl transition-colors"
             >
               {t('survey.next')}
               <ArrowRight className="w-4 h-4" />

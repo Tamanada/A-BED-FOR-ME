@@ -1,5 +1,5 @@
 {
-  "brand": "A Bed For Me",
+  "brand": "aBed4.me",
   "nav": {
     "home": "首页",
     "vision": "我们的愿景",
@@ -42,6 +42,19 @@
     "subtitle": "加入数百位正在构建更公平未来的酒店经营者。从告诉我们你的酒店开始。",
     "button": "立即开始",
     "survey": "先做问卷调查"
+  },
+  "benefits": {
+    "title": "房东福利",
+    "higher": "更高收益",
+    "higherDesc": "只需10%佣金，留住更多收入",
+    "priority": "优先展示",
+    "priorityDesc": "本地房源优先获得曝光",
+    "support": "本地支持",
+    "supportDesc": "由了解您所在地区的人用您的语言提供帮助",
+    "fair": "公平政策",
+    "fairDesc": "由社区为社区制定的规则",
+    "referral": "推荐奖励",
+    "referralDesc": "邀请其他房东和房客即可获得收益"
   },
   "survey": {
     "title": "快速问卷",
@@ -142,10 +155,12 @@
     "ownershipDesc": "每位酒店经营者都是共同所有者",
     "revenue": "收益共享",
     "revenueDesc": "利润回归到你",
+    "referralFee": "1% 推荐奖励",
+    "referralFeeDesc": "奖励宾客推荐",
     "joinNow": "立即加入"
   },
   "footer": {
     "tagline": "酒店经营者拥有的预订平台。",
-    "rights": "© 2026 A Bed For Me. 保留所有权利。"
+    "rights": "© 2026 aBed4.me. 保留所有权利。"
   }
 }

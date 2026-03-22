@@ -75,7 +75,7 @@ export default function HotelSubmitPage() {
         <p className="mt-4 text-gray-600">{t('hotel.successText')}</p>
         <Link
           to={user ? '/dashboard' : '/signup'}
-          className="mt-8 inline-flex items-center gap-2 px-6 py-3 bg-trust hover:bg-trust-dark text-white font-medium rounded-xl transition-colors"
+          className="mt-8 inline-flex items-center gap-2 px-6 py-3 bg-sky hover:bg-sky-dark text-white font-medium rounded-xl transition-colors"
         >
           {user ? t('hotel.goToDashboard') : t('nav.signup')}
         </Link>
@@ -101,12 +101,12 @@ export default function HotelSubmitPage() {
               <input
                 {...register('bookingUrl')}
                 placeholder={t('hotel.bookingUrlPlaceholder')}
-                className="flex-1 px-4 py-3 rounded-xl border border-gray-200 focus:border-trust focus:ring-1 focus:ring-trust outline-none text-gray-700 placeholder:text-gray-400"
+                className="flex-1 px-4 py-3 rounded-xl border border-gray-200 focus:border-sky focus:ring-1 focus:ring-sky outline-none text-gray-700 placeholder:text-gray-400"
                 onBlur={(e) => handleExtract(e.target.value)}
               />
             </div>
             {extracting && (
-              <p className="mt-2 text-sm text-trust flex items-center gap-2">
+              <p className="mt-2 text-sm text-sky flex items-center gap-2">
                 <Loader2 className="w-4 h-4 animate-spin" />
                 {t('hotel.extracting')}
               </p>
@@ -127,7 +127,7 @@ export default function HotelSubmitPage() {
             <input
               {...register('airbnbUrl')}
               placeholder={t('hotel.airbnbUrlPlaceholder')}
-              className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-trust focus:ring-1 focus:ring-trust outline-none text-gray-700 placeholder:text-gray-400"
+              className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-sky focus:ring-1 focus:ring-sky outline-none text-gray-700 placeholder:text-gray-400"
               onBlur={(e) => handleExtract(e.target.value)}
             />
           </div>
@@ -138,7 +138,7 @@ export default function HotelSubmitPage() {
             <input
               {...register('name', { required: true })}
               placeholder={t('hotel.namePlaceholder')}
-              className={`w-full px-4 py-3 rounded-xl border ${errors.name ? 'border-red-400' : 'border-gray-200'} focus:border-trust focus:ring-1 focus:ring-trust outline-none text-gray-700 placeholder:text-gray-400`}
+              className={`w-full px-4 py-3 rounded-xl border ${errors.name ? 'border-red-400' : 'border-gray-200'} focus:border-sky focus:ring-1 focus:ring-sky outline-none text-gray-700 placeholder:text-gray-400`}
             />
           </div>
 
@@ -149,7 +149,7 @@ export default function HotelSubmitPage() {
               <input
                 {...register('country', { required: true })}
                 placeholder={t('hotel.countryPlaceholder')}
-                className={`w-full px-4 py-3 rounded-xl border ${errors.country ? 'border-red-400' : 'border-gray-200'} focus:border-trust focus:ring-1 focus:ring-trust outline-none text-gray-700 placeholder:text-gray-400`}
+                className={`w-full px-4 py-3 rounded-xl border ${errors.country ? 'border-red-400' : 'border-gray-200'} focus:border-sky focus:ring-1 focus:ring-sky outline-none text-gray-700 placeholder:text-gray-400`}
               />
             </div>
             <div>
@@ -157,7 +157,7 @@ export default function HotelSubmitPage() {
               <input
                 {...register('city', { required: true })}
                 placeholder={t('hotel.cityPlaceholder')}
-                className={`w-full px-4 py-3 rounded-xl border ${errors.city ? 'border-red-400' : 'border-gray-200'} focus:border-trust focus:ring-1 focus:ring-trust outline-none text-gray-700 placeholder:text-gray-400`}
+                className={`w-full px-4 py-3 rounded-xl border ${errors.city ? 'border-red-400' : 'border-gray-200'} focus:border-sky focus:ring-1 focus:ring-sky outline-none text-gray-700 placeholder:text-gray-400`}
               />
             </div>
           </div>
@@ -169,14 +169,14 @@ export default function HotelSubmitPage() {
               <input
                 type="number"
                 {...register('numRooms', { required: true, min: 1 })}
-                className={`w-full px-4 py-3 rounded-xl border ${errors.numRooms ? 'border-red-400' : 'border-gray-200'} focus:border-trust focus:ring-1 focus:ring-trust outline-none text-gray-700`}
+                className={`w-full px-4 py-3 rounded-xl border ${errors.numRooms ? 'border-red-400' : 'border-gray-200'} focus:border-sky focus:ring-1 focus:ring-sky outline-none text-gray-700`}
               />
             </div>
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-1.5">{t('hotel.priceRange')} *</label>
               <select
                 {...register('priceRange', { required: true })}
-                className={`w-full px-4 py-3 rounded-xl border ${errors.priceRange ? 'border-red-400' : 'border-gray-200'} focus:border-trust focus:ring-1 focus:ring-trust outline-none text-gray-700 bg-white`}
+                className={`w-full px-4 py-3 rounded-xl border ${errors.priceRange ? 'border-red-400' : 'border-gray-200'} focus:border-sky focus:ring-1 focus:ring-sky outline-none text-gray-700 bg-white`}
               >
                 <option value="">—</option>
                 {['budget', 'mid', 'premium', 'luxury'].map((val, i) => (
@@ -192,7 +192,7 @@ export default function HotelSubmitPage() {
             <input
               type="email"
               {...register('contactEmail', { required: true })}
-              className={`w-full px-4 py-3 rounded-xl border ${errors.contactEmail ? 'border-red-400' : 'border-gray-200'} focus:border-trust focus:ring-1 focus:ring-trust outline-none text-gray-700`}
+              className={`w-full px-4 py-3 rounded-xl border ${errors.contactEmail ? 'border-red-400' : 'border-gray-200'} focus:border-sky focus:ring-1 focus:ring-sky outline-none text-gray-700`}
             />
           </div>
 
@@ -201,14 +201,14 @@ export default function HotelSubmitPage() {
             <input
               {...register('contactPhone')}
               placeholder={t('hotel.phonePlaceholder')}
-              className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-trust focus:ring-1 focus:ring-trust outline-none text-gray-700 placeholder:text-gray-400"
+              className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-sky focus:ring-1 focus:ring-sky outline-none text-gray-700 placeholder:text-gray-400"
             />
           </div>
 
           <button
             type="submit"
             disabled={submitting}
-            className="w-full py-4 bg-trust hover:bg-trust-dark text-white font-semibold rounded-xl shadow-lg shadow-blue-500/25 transition-all disabled:opacity-50 flex items-center justify-center gap-2"
+            className="w-full py-4 bg-sky hover:bg-sky-dark text-white font-semibold rounded-xl shadow-lg shadow-sky/25 transition-all disabled:opacity-50 flex items-center justify-center gap-2"
           >
             {submitting ? <Loader2 className="w-5 h-5 animate-spin" /> : t('hotel.submit')}
           </button>

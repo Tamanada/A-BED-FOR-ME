@@ -1,5 +1,5 @@
 {
-  "brand": "A Bed For Me",
+  "brand": "aBed4.me",
   "nav": {
     "home": "Beranda",
     "vision": "Visi Kami",
@@ -42,6 +42,19 @@
     "subtitle": "Bergabunglah dengan ratusan pelaku perhotelan yang membangun masa depan yang lebih adil. Mulai dengan menceritakan hotel Anda.",
     "button": "Mulai Sekarang",
     "survey": "Isi Survei Dulu"
+  },
+  "benefits": {
+    "title": "Manfaat untuk Tuan Rumah",
+    "higher": "Pendapatan Lebih Tinggi",
+    "higherDesc": "Simpan lebih banyak dari penghasilan Anda dengan komisi hanya 10%",
+    "priority": "Listing Diprioritaskan",
+    "priorityDesc": "Properti lokal mendapat visibilitas lebih dulu",
+    "support": "Dukungan Lokal",
+    "supportDesc": "Bantuan dalam bahasa Anda, dari orang yang mengenal daerah Anda",
+    "fair": "Kebijakan yang Adil",
+    "fairDesc": "Aturan dibuat oleh komunitas, untuk komunitas",
+    "referral": "Bonus Referral",
+    "referralDesc": "Dapatkan penghasilan dengan mengundang tuan rumah dan tamu lain"
   },
   "survey": {
     "title": "Survei Cepat",
@@ -142,10 +155,12 @@
     "ownershipDesc": "Setiap pelaku perhotelan adalah pemilik bersama",
     "revenue": "Bagi hasil",
     "revenueDesc": "Keuntungan kembali ke Anda",
+    "referralFee": "1% Referral",
+    "referralFeeDesc": "Memberi penghargaan untuk referral tamu",
     "joinNow": "Bergabung Sekarang"
   },
   "footer": {
     "tagline": "Platform pemesanan milik pelaku perhotelan.",
-    "rights": "© 2026 A Bed For Me. Hak cipta dilindungi."
+    "rights": "© 2026 aBed4.me. Hak cipta dilindungi."
   }
 }
